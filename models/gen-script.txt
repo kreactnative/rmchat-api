@@ -1,0 +1,1 @@
+﻿sequelize-auto -o "./models" -d rmchat -h 174.138.24.113 -u knodejs -p 3306 -x 56255625 -e mysql
