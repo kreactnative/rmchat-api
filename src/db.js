@@ -21,14 +21,12 @@ export default callback => {
     }
   });
 
-	sequelize
-	  .authenticate()
-	  .then(() => {
-	    console.log('Connection has been established successfully.')
-			callback(models(sequelize))
-	  })
-	  .catch(err => {
-	    console.error('Unable to connect to the database:', err)
-			callback(null)
+	sequelize.authenticate().then(() => {
+    console.log('Connection has been established successfully.')
+    callback(models(sequelize))
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err)
+    callback(null)
   });
 }
