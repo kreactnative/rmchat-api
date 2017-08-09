@@ -1,5 +1,12 @@
 {
-	"port": 3059,
-	"bodyLimit": "1000kb",
-	"corsHeaders": ["Link"]
+  "port": 3059,
+  "bodyLimit": "1000kb",
+  "corsHeaders": ["Link"],
+  "DB": {
+    "SERVER": "174.138.24.113",
+    "DB_NAME": "rmchat",
+    "PORT": "3306",
+    "USERNAME": "knodejs",
+    "PASSWORD": "56255625"
+  }
 }
